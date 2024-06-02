@@ -5,6 +5,7 @@ from .models import Product
 # Register your models here.
 @admin.register(Product)
 class ProductAdminClass(admin.ModelAdmin):
+    """ Model Admin configurations for Product Model """
     list_display=["id",
                   "name",
                   "category",
